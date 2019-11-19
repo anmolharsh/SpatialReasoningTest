@@ -101,19 +101,7 @@ while count < 6: # run the program for 60 seconds
      # draw the text to the screen only if display is True
      
      #display = not display
-     if count!=2 or count!=1:
-        screen.blit(ques_images[count], location[count])
-       	#screen.blit(score_text , (WIDTH/2,HEIGHT-100))
-     elif count==1:
-   	 	#screen.blit(opt1[0],(WIDTH/2, HEIGHT/2))
-   		#screen.blit(opt1[1],(50,HEIGHT-200))
-  		#screen.blit(opt1[2],(90,HEIGHT-200))
-   		#screen.blit(opt1[3],(130,HEIGHT-200))
-   		#screen.blit(ques_images[count], location[count])
-   		
-   		#screen.blit(score_text , (WIDTH/2,HEIGHT-100))
-   	 	#screen.blit(opt2[3],(130,HEIGHT-200))
-   	 	ticks = pygame.time.get_ticks()
+     screen.blit(ques_images[count], location[count])
 
      if keystate[pygame.K_c] and ( count==0 or count==1 ) :
      	score+=1
@@ -163,5 +151,5 @@ while count < 6: # run the program for 60 seconds
 
      # wait for half second
      pygame.time.wait(150)
-
+pygame.time.wait(300)
 
